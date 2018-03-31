@@ -7,7 +7,7 @@ FROM electron
 #
 # I also had to run `xhost local:docker` on my host computer, to allow docker using my X server (get rid of "No protocol specified")
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     libxext-dev libx11-xcb-dev
 #    libxtst-dev libxkbfile-dev
 
