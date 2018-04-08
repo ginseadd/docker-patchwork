@@ -2,4 +2,4 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-docker build -t patchwork $DIR
+docker build -t ginseadd/patchwork $DIR
