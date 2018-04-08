@@ -11,5 +11,5 @@ fi
 SSBDIR="$1"
 
 xhost +local:docker
-docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v $SSBDIR:/root/.ssb patchwork npm start
+docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v $SSBDIR:/root/.ssb ginseadd/patchwork npm start
 xhost -local:docker
